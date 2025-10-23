@@ -1,2 +1,28 @@
-# sqlite-datasets
-A curated collection of open SQLite databases for data science, analytics, and benchmarking. Includes ready-to-use .db files with multiple linked tables and example build scripts
+# 🧠 SQLite Datasets Benchmark
+
+A collection of lightweight, open SQLite databases designed for:
+- Data science and SQL learning
+- Benchmarking analytics tools
+- Practicing SQL queries
+
+---
+
+## 📦 Included Databases
+
+| Database | Description | Source |
+|-----------|--------------|--------|
+| `meal.db` | Meal data with metadata and nutritional info | [https://www.kaggle.com/datasets/jockeroika/life-style-data] |
+| `meal.db` | Meal data with metadata and nutritional info | [https://www.kaggle.com/datasets/jockeroika/life-st] |
+
+---
+
+## ⚙️ How to Use
+
+```python
+import sqlite3
+import pandas as pd
+
+conn = sqlite3.connect("data/meal.db")
+df = pd.read_sql("SELECT * FROM meal_metadata LIMIT 5;", conn)
+print(df)
+conn.close()
