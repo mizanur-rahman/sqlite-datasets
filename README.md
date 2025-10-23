@@ -12,7 +12,7 @@ A collection of lightweight, open SQLite databases designed for:
 | Database | Description | Source |
 |-----------|--------------|--------|
 | `meal.db` | Meal data with metadata and nutritional info | [https://www.kaggle.com/datasets/jockeroika/life-style-data] |
-| `meal.db` | Meal data with metadata and nutritional info | [https://www.kaggle.com/datasets/jockeroika/life-st] |
+| `retail_data.db` | Retal Data | [https://www.kaggle.com/datasets/amangarg08/apple-retail-sales-dataset] |
 
 ---
 
